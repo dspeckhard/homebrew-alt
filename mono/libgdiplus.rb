@@ -3,7 +3,7 @@ require 'formula'
 class Libgdiplus < Formula
   homepage 'http://www.mono-project.com/Libgdiplus'
   url 'https://github.com/mono/libgdiplus/archive/3.12.tar.gz'
-  sha1 '71078877dc3ff2e6639013c8b75908430db33dec'
+  sha256 '71078877dc3ff2e6639013c8b75908430db33dec'
 
   depends_on 'gettext'
   depends_on 'libtiff'
