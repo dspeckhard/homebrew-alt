@@ -2,8 +2,8 @@ require 'formula'
 
 class Libgdiplus < Formula
   homepage 'http://www.mono-project.com/Libgdiplus'
-  url 'http://ftp.novell.com/pub/mono/sources/libgdiplus/libgdiplus-2.10.tar.bz2'
-  md5 '451966e8f637e3a1f02d1d30f900255d'
+  url 'https://github.com/mono/libgdiplus/archive/3.12.tar.gz'
+  md5 '6e9a80ba921e4842acd5a12b14c78dc9'
 
   depends_on 'gettext'
   depends_on 'libtiff'
@@ -13,10 +13,10 @@ class Libgdiplus < Formula
   # Fix compilation against libpng1.5. See:
   # https://bugs.gentoo.org/355113
   # https://bugzilla.novell.com/show_bug.cgi?id=666583
-  def patches
-    { :p0 =>
-    'http://cvsweb.se.netbsd.org/cgi-bin/bsdweb.cgi/~checkout~/pkgsrc/graphics/libgdiplus/patches/patch-aa?rev=1.9;content-type=text%2Fplain'
-    }
+  #def patches
+  #  { :p0 =>
+  #  'http://cvsweb.se.netbsd.org/cgi-bin/bsdweb.cgi/~checkout~/pkgsrc/graphics/libgdiplus/patches/patch-aa?rev=1.9;content-type=text%2Fplain'
+  #  }
   end if MacOS.lion?
 
   def install
