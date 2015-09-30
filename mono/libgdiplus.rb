@@ -17,7 +17,7 @@ class Libgdiplus < Formula
   #  { :p0 =>
   #  'http://cvsweb.se.netbsd.org/cgi-bin/bsdweb.cgi/~checkout~/pkgsrc/graphics/libgdiplus/patches/patch-aa?rev=1.9;content-type=text%2Fplain'
   #  }
-  end if MacOS.lion?
+  #end if MacOS.lion?
 
   def install
     ENV.x11
